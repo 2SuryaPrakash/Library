@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="lib.js" defer></script>
+</head>
+<body>
+    <div class="header">
+        <h1>Library</h1>
+    </div>
+    
+    <div class="container">
+        <dialog class="newbookdialog">
+            <form>
+                <label for="author">Author</label>
+                <input type="text" name="author" id="author" required>
+                <label for="title">Title</label>
+                <input type="text" name="title" id="title" required>
+                <label for="pages">Number of Pages</label>
+                <input type="number" name="pages" id="pages"required>
+                <label for="read">Read</label>
+                <input type="checkbox" name="read" id="read" required>
+                <button id="submit" type="button">Submit</button>
+                <button id="cancel" type="button">Cancel</button>
+            </form>
+        </dialog>
+        <div class="sidebar">
+            <ul>
+                Main Menu
+                <li><button class='newbookbutton'>New Book</button></li>
+            </ul>
+        </div>
+        <div class="lib-cont"></div>
+    </div>
+
+    <div class="footer"></div>
+</body>
+</html>
